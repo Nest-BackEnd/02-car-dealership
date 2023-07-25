@@ -1,11 +1,11 @@
-import { IsString } from "class-validator";
+import { IsString } from 'class-validator';
 
 export class CreateCarDto {
 
-    @IsString({ message: 'The Brand most be a cool string' })
+    @IsString()
     readonly brand: string;
-    
+
     @IsString()
     readonly model: string;
-    
+
 }
